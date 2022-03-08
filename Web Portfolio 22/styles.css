@@ -1,0 +1,460 @@
+/*
+
+NEW COLOR SCHEME
+Main Color Neon Purple - #C724B1
+Acent Color Neon Green - #E0E722
+Background Color - #0000
+Font Color - #FFFF
+
+*/
+
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&display=swap');
+
+
+/**Mobile First**/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+header .navbar a {
+    color: #ffff;
+    padding: 2px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .4s;
+    transition-property: background;
+    font-family: 'Monserrat', sans-serif;
+    
+}
+
+header .navbar a:hover {
+    background: #E0E722;
+    color: black;
+}
+
+header .navbar a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .logo {
+   width: 150px;
+   height: 150px;
+}
+
+header {
+    top: 0px;
+    padding: 10px 100px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**General Styles**/
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+/**My Profile Photo Styles**/
+
+#profile {
+    border: 5px solid white;
+    padding: 0px;
+    border-radius: 50px 20px;
+    margin-left: 30px;
+
+}
+#profile src {
+    padding: 50px;
+}
+
+
+/**Content Styles**/
+
+.content    {
+    max-width: 100%;
+    margin: 60px 100px;
+}
+
+.content-left {
+    max-width: 100%;
+    margin: 60px 60px;
+    padding: 10px;
+}
+
+.formBox {
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.info {
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+
+.project {
+    max-width: 100%;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    
+}
+
+.project h2 {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+.content .info h2 {
+    color: #ffff;
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#green {
+    color: #E0E722;
+}
+
+.content-left .info h2 {
+    color: #E0E722;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.content-left .info h1 {
+    color: #C724B1;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.content .info p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #ffff;
+}
+
+.content-left .info p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #ffff;
+    text-align: left;
+}
+
+.resume {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/**Resume Button**/
+
+.content .resume {
+    color: #E3DBFA;
+    background-color: #C724B1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: .4s;
+    transition-property: background;
+}
+
+.content .resume:hover {
+    background: #E0E722;
+    color: black;
+}
+
+
+ /*Bootstrap Card Styles*/
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+
+/**Projects Button**/
+
+.content .projects-btn {
+    color: #E3DBFA;
+    background-color: #C724B1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: .4s;
+    transition-property: background;
+}
+
+.content .projects-btn:hover {
+    background: #E0E722;
+    color: black;
+}
+
+
+/**Social Media Styles**/
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.social-icons a {
+    position: relative;
+    color: #ffff;
+    font-size: 25px;
+    transition: 3s;
+    transition-property: transform;
+}
+
+.social-icons a:not(:last-child) {
+    margin-right: 55px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+/**Hamburger Menu Styles**/
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+
+/**Sign Up Form Styles**/
+
+.content form {
+    border-radius: 5px;
+    background-color: #E0E722;
+    padding: 20px;
+}
+.signupform {
+    font-family: "Montserrat", sans-serif;
+    width: 360px;
+    padding-top: 2rem;
+    
+}
+
+.signupform fieldset legend {
+    color: #C724B1;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+  input[type=submit] {
+    background-color: #C724B1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  input[type=reset] {
+    background-color: #C724B1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  input[type=submit]:hover {
+    background-color: #E0E722;
+    color: black;
+}
+
+  input[type=reset]:hover {
+      background-color: #E0E722;
+      color: black;
+}
+ 
+.content-wrap {
+    margin: 20px;
+    padding: 20px 40px;
+}
+
+
+/**Fixed Footer**/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: #ffff;
+    text-align: center;
+ }
+
+footer h2 {
+    margin: 0px;
+}
+
+.contact-list a {
+    color: #ffff;
+}
+
+
+/**Responsive Styles**/
+
+@media screen and (max-width: 1026px) {
+    
+    header .navbar {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        transition: 0.3s;
+        transition-property: color;
+        cursor: pointer;
+        color: #C724B1;
+    }
+
+    label:hover {
+        color: 	#E0E722;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked ~ header .navbar {
+        z-index: 2;
+        position: fixed;
+        background: rgb(239, 238, 241, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navbar a {
+        margin-right: 0;
+        margin-bottom: 50px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    #check:checked ~ header .navbar label .menu-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navbar label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .content .info h2 {
+        font-size: 32px;
+        line-height: 40px;
+        }
+
+    .content .info h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content .info p {
+        font-size: 14px;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+}
+}
+
+@media screen and (max-width:600px) {
+
+    .content-left .info h2 {
+        font-size: 32px;
+        line-height: 40px;
+        }
+
+    .content-left .info h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content-left .info p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:446px){
+    .content .projects-btn {
+        display: block;
+        padding: 10px 20px;
+   }
+   
+   .content .resume-btn {
+        display: block;
+        padding: 10px 20px;
+   }
+ }

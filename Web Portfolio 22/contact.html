@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Megan Dunn</title>
+
+        <!-- Latest compiled Bootstrap CSS -->
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- My External Stylesheet -->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--Latest Compiled Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </head>
+    <body>
+
+        <section>
+            <input type="checkbox" id="check">
+            <header>
+                <a href="./index.html">  
+                    <img src="./images/LuLuxCo_Logo.png" class="logo" alt="Megan Dunn Logo">
+                </a>
+                <div class="navbar">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./resume.html">Resume</a>
+                    <a href="https://luluxco.wordpress.com/blog/" target="_blank">Blog</a>
+                </div>
+                <label for="check" class="check">
+                    <i class="fas fa-bars menu-btn"></i>
+                    <i class="fas fa-times close-btn"></i>
+                </label>
+            </header>
+
+            <div class="content">
+                <div class="info">
+                    
+                    <h2>Question or <br><span>Design Request?</span></h2>
+                        <div class="formBox">
+
+                        <!-- Signup Form-->
+                            <form class="signupform">
+
+                                <fieldset>
+                                    <legend>Contact Form</legend>
+
+                                    <label for="fname">First Name:</label><br>
+                                    <input type="text" id="fname" name="fname" placeholder="First" required>
+                        
+                                    <label for="lname">Last Name:</label><br>
+                                    <input type="text" id="lname" name="lname" placeholder="Last" required>
+                        
+                                    <label for="email">Email:</label><br>
+                                    <input type="text" id="email" name="email" placeholder="Email" required>
+
+                                    <label for="phone">Phone:</label><br>
+                                    <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                                </fieldset> 
+
+                                <fieldset>
+                                    <label for="subject">How can I help?</label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                </fieldset>
+
+                                <!-- Submit and Reset Buttons -->
+                                <input type="submit" id="submit" value="Submit" class="btn">
+                                <input type="reset" id="reset" value="Reset" class="btn">
+
+                            </form>
+                        </div>
+                </div>
+            </div>
+        
+        </section>    
+        <footer>
+        <!-- Social media and contact links. Add or remove any networks. -->
+            <div class="social-icons"> 
+                    <a href="https://www.linkedin.com/in/dunnmegan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/MeganVDunn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+              <ul class="contact-list">
+                <li>Copyright&copy; 2022 All Rights Reserved</li>
+              </ul>
+        </footer>   
+    
+    </body>
+  
+</html>
